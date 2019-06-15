@@ -1,0 +1,5 @@
+Rake
+- I wanted to make a change of the data type for the "season" attribute from integer to string
+- But even after saving it and running rake db:migrate, the table still remained the same, with season's data type still integer
+- So i had to rollback the table to its previous version using db:rollback
+- After that I ran db:migrate again and it worked
